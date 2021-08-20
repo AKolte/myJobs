@@ -6,11 +6,6 @@
     justify-content: flex-start;
 }
 
-/* .cardsContainer {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .jobCards {
     position: absolute;
     margin-left: 10%;

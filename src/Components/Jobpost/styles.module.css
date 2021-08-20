@@ -1,0 +1,24 @@
+.jobpost {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    height: 162px;
+    width: 260px;
+}
+
+.locationAndApplicants {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.blueBg {
+    background-color: #43AFFF33 !important;
+    color: #303F60 !important;
+    border: 0;
+    border-radius: 5px;
+}

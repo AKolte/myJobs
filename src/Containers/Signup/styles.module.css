@@ -1,0 +1,32 @@
+.signupCard {
+    position:absolute;
+    top: 15%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 30px 36px #557DA526;
+}
+
+.centerCard {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    height: 100%
+}
+
+.signupAndLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.candidateSignup {
+    cursor: not-allowed;
+    margin-left: 20px;
+    color: 'black' !important;
+}

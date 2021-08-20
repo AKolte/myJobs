@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { createContext, useEffect, useState } from 'react';
 import './App.css';
+import Home from './Containers/Home';
+
+const getCookieObject = () => {
+  const cook = document.cookie;
+  const cookArray = cook.split(";");
+  let cookObj = {};
+  let temp=[];
+  cookArray.forEach((eachPair)=> {
+    temp=eachPair.split('=');
+    cookObj = {...cookObj, [temp[0].trim()]: temp[1]}
+  })
+  console.log(cookObj);
+  return cookObj;
+}
+
+export const cookieObject = getCookieObject();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Home />
     </div>
   );
 }

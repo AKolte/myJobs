@@ -1,0 +1,11 @@
+.jobpostCard {
+    position:absolute;
+    top: 15%;
+    max-width: 557px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 30px 36px #557DA526;
+}

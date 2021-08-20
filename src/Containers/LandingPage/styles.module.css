@@ -1,0 +1,36 @@
+
+body {
+    height: 100%;
+    background-color: #EDF6FF;
+}
+.interviewImage {
+    margin-bottom: -50%;
+    border-radius: 20px;
+}
+
+.whiteText {
+    color: #fff;
+}
+
+.primaryColor {
+    color: #43afff;
+}
+
+.backgroundBottom {
+    color: #EDF6FF;
+}
+
+.headerContent {
+    display: flex;
+    /* height: 120%; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerBar {
+    position: relative;
+    /* height: 464px; */
+    flex-direction: column;
+    width: 100%;
+    background: transparent linear-gradient(248deg, #303F60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
+}

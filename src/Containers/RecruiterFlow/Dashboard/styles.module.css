@@ -1,0 +1,32 @@
+.recruiterDashboard {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    align-items: space-between;
+    justify-content: flex-start;
+}
+
+/* .cardsContainer {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.jobCards {
+    position: absolute;
+    margin-left: 10%;
+    width: 90%;
+    /* height: 100%; */
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 280px));
+    justify-items: stretch;
+}
+
+.noJobsPosted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%; 
+}

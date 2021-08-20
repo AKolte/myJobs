@@ -19,9 +19,6 @@ const Login = () => {
 
 
     const login = (email, password) => {
-        console.log(email, password);
-
-        console.log(apis.login);
 
         const data = { email, password };
 
@@ -36,7 +33,6 @@ const Login = () => {
         .then(data => {
             
             if (data.code >= 200 && data.code <= 299) {
-            console.log('Success:', data);
                 document.cookie = `email=${data.data.email}`;
                 document.cookie = `name=${data.data.name}`;
                 document.cookie = `id=${data.data.id}`;
@@ -45,7 +41,6 @@ const Login = () => {
 
             history.push('./dashboard')
         } else {
-            console.log('wrongpass');
             setAuthMessage(data.message);
         }
         })
@@ -58,7 +53,6 @@ const Login = () => {
 
     const validate = () => {
         var emailRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-        console.log('validating ', !emailRegex.test(email));
         if (emailRegex.test(email)) {
            login(email, passRef.current.value);
         } else {
@@ -115,7 +109,6 @@ const Login = () => {
                         <Form.Control.Feedback type="invalid">
                             {!passwordValidation ? 'Please enter a valid password.' : null}
                             {authMessage}
-                            {console.log(authMessage.length, passwordValidation)}
                         </Form.Control.Feedback>
                     </Form.Group>
             

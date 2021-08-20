@@ -11,7 +11,6 @@ const getCookieObject = () => {
     temp=eachPair.split('=');
     cookObj = {...cookObj, [temp[0].trim()]: temp[1]}
   })
-  console.log(cookObj);
   return cookObj;
 }
 

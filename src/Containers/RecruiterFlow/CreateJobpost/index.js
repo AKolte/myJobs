@@ -95,17 +95,12 @@ const CreateJobpost = () => {
                 })
                 .then(response => response.json())
                 .then(data => {
-                    
                     if (data.code >= 200 && data.code <= 299) {
-                    console.log('Job posted successfully');
                     history.push('./dashboard')
                 } else {
-                    console.log('wrongpass');
-                    console.log(data.message);
                 }
                 })
                 .catch((error) => {
-                    console.log(error.message);
                     console.error('Error:', error);
                 });
         

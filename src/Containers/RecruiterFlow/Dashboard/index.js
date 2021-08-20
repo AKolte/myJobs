@@ -4,11 +4,8 @@ import apis from '../../../apis';
 import { cookieObject } from './../../../App';
 import { Button, Image, Modal, Breadcrumb } from 'react-bootstrap';
 import Jobpost from '../../../Components/Jobpost';
-import ViewApplicants from '../ViewApplicants';
 import blank from './assets/blank.svg';
 import styles from './styles.module.css';
-
-// console.log((document.cookie));
 
 
 const Dashboard = () => {
@@ -19,8 +16,6 @@ const Dashboard = () => {
 
     const [postedJobs, setPostedJobs] = useState([]);
     
-     
-    console.log('cookies ', cookieObject);
 
     useEffect(() => {
         fetch(`${apis.getSingleJobDetails}/${jobModalId}/candidates`, {
@@ -33,17 +28,13 @@ const Dashboard = () => {
             .then(response => response.json())
             .then(data => {
                 if (data.code >= 200 && data.code <= 299) {
-                console.log('applicants ', data);
-                // setApplications(data.data.data);
+
                 return data;
-                // history.push('./dashboard')
             } else {
-                console.log('wrongpass');
-                console.log(data.message);
+                //todo
             }
             })
             .catch((error) => {
-                console.log(error.message);
                 console.error('Error:', error);
             });
 
@@ -64,17 +55,14 @@ const Dashboard = () => {
             .then(response => response.json())
             .then(data => {
                 if (data.code >= 200 && data.code <= 299) {
-                console.log('Jobs posted ', data.data.data);
                 setPostedJobs(data.data.data);
                 return data;
                 // history.push('./dashboard')
             } else {
-                console.log('wrongpass');
-                console.log(data.message);
+                //todo
             }
             })
             .catch((error) => {
-                console.log(error.message);
                 console.error('Error:', error);
             });
     }
@@ -100,7 +88,6 @@ const Dashboard = () => {
     }
 
     function openModal (jobId) {
-        console.log('ds');
         setJobModalId(jobId);
         setViewApplcations(true);
     }

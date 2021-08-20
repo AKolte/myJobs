@@ -4,7 +4,6 @@ import { cookieObject } from "../../../App";
 import { Modal } from "react-bootstrap"
 
 const ViewApplicants = (props) => {
-    console.log(props);
 
     const [applications, setApplications] = useState([]);
 
@@ -19,17 +18,12 @@ const ViewApplicants = (props) => {
             .then(response => response.json())
             .then(data => {
                 if (data.code >= 200 && data.code <= 299) {
-                console.log('applicants ', data);
-                // setApplications(data.data.data);
                 return data;
-                // history.push('./dashboard')
             } else {
-                console.log('wrongpass');
-                console.log(data.message);
+            // todo 
             }
             })
             .catch((error) => {
-                console.log(error.message);
                 console.error('Error:', error);
             });
 

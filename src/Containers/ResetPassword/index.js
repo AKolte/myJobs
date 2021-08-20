@@ -17,11 +17,9 @@ const ResetPassword = () => {
     const [isValidConfirmPassword, setValidConfirmPassword] = useState(true);
     const confirmPassRef = useRef('');
 
-    console.log(search);
     const query = new URLSearchParams(search);
     const email = query.get('email');
     const resetToken = query.get('token');
-    console.log('email ', email, 'token ', resetToken);
 
 
 
@@ -44,7 +42,6 @@ const ResetPassword = () => {
         );
     }
 
-    console.log("restpasss");
     return (
         <div class={styles.centerCard}>
             <div className={styles.resetCard}>

@@ -166,16 +166,13 @@ const Signup = () => {
                 .then(response => response.json())
                 .then(data => {
                     if (data.code >= 200 && data.code <= 299) {
-                    console.log('Success:', data);
                     history.push('./login');
                 } else {
 
-                    console.log(data);
                     let errorMessage = ' ';
                     data.errors?.forEach((eachError) => {
                         return(errorMessage += '\n' + eachError.name);
                     });
-                    console.log(data);
                     if (data.message) errorMessage+=data.message;
                     setErrorResponse(errorMessage);
                 }
@@ -204,7 +201,6 @@ const Signup = () => {
                     {renderSkillsInput()}
 
                     
-                    {console.log(errorResponse)}
                     <div className={styles.signupAndLogin}>
                         <div style={{ color: 'red'}}>{errorResponse}</div>
                         <Button onClick={signUp} variant='primary'>Signup</Button>

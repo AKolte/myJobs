@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/myJobs/static/css/main.e5519915.chunk.css",
+    "main.js": "/myJobs/static/js/main.d134e24d.chunk.js",
+    "main.js.map": "/myJobs/static/js/main.d134e24d.chunk.js.map",
+    "runtime-main.js": "/myJobs/static/js/runtime-main.192f331a.js",
+    "runtime-main.js.map": "/myJobs/static/js/runtime-main.192f331a.js.map",
+    "static/css/2.c0913427.chunk.css": "/myJobs/static/css/2.c0913427.chunk.css",
+    "static/js/2.b28d9ace.chunk.js": "/myJobs/static/js/2.b28d9ace.chunk.js",
+    "static/js/2.b28d9ace.chunk.js.map": "/myJobs/static/js/2.b28d9ace.chunk.js.map",
+    "static/js/3.3d45b7b9.chunk.js": "/myJobs/static/js/3.3d45b7b9.chunk.js",
+    "static/js/3.3d45b7b9.chunk.js.map": "/myJobs/static/js/3.3d45b7b9.chunk.js.map",
+    "index.html": "/myJobs/index.html",
+    "static/css/2.c0913427.chunk.css.map": "/myJobs/static/css/2.c0913427.chunk.css.map",
+    "static/css/main.e5519915.chunk.css.map": "/myJobs/static/css/main.e5519915.chunk.css.map",
+    "static/js/2.b28d9ace.chunk.js.LICENSE.txt": "/myJobs/static/js/2.b28d9ace.chunk.js.LICENSE.txt",
+    "static/media/blank.d0d1d813.svg": "/myJobs/static/media/blank.d0d1d813.svg",
+    "static/media/font-awesome.min.css": "/myJobs/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/interview.9e437405.png": "/myJobs/static/media/interview.9e437405.png",
+    "static/media/recruiter.dbf22346.svg": "/myJobs/static/media/recruiter.dbf22346.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.192f331a.js",
+    "static/css/2.c0913427.chunk.css",
+    "static/js/2.b28d9ace.chunk.js",
+    "static/css/main.e5519915.chunk.css",
+    "static/js/main.d134e24d.chunk.js"
+  ]
+}

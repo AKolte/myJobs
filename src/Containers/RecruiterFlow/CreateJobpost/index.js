@@ -83,7 +83,7 @@ const CreateJobpost = () => {
 
     const postJob = () => {
         if (validateFields) {
-
+            console.log(cookieObject)
             const data = {title, description, location };
             fetch(apis.createJobpost, {
                 method: 'POST',
